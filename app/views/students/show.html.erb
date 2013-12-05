@@ -1,8 +1,6 @@
-<h3><%= @student.name %> <%= @student.last_name %>'s profile</h3>
+<h3> <span class="glyphicon glyphicon-user"> <%=@student.name%> <%=@student.last_name%>'s profile</span></h3>
 <hr>
-
 <p> <%= @student.name %> belongs to the house <%= @student_house.name %></p>
-
 <hr>
 
 <%= link_to "Back to the list of all students" , students_path %>

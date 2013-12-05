@@ -1,9 +1,10 @@
 <h3><%= @house.name %></h3>
 <hr>
+<h4>Students:</h4>
 <ul>
-<% @house.students.each do |student| %>
-  <li><%= student.name %> <%= student.last_name %></li>
-<% end %>
+  <% @house.students.each do |student| %>
+  <li><a href="/students/<%= student.id %>"><%= student.name %> <%= student.last_name %></a></li>
+  <% end %>
 </ul>
 <hr>
 <%= link_to "Home", root_path %>
