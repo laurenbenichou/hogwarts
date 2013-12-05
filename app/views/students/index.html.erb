@@ -1,0 +1,8 @@
+<h1>Here are all the students in Hogwarts</h2>
+  <hr>
+<% @students.each do |student| %>
+<li><a href="/students/<%= student.id %>"><%= student.name %> <%= student.last_name %></a></li>
+<% end %>
+<hr>
+<%= link_to "Home", root_path %>
+

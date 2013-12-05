@@ -1,0 +1,10 @@
+<h3><%= @student.name %> <%= @student.last_name %>'s profile</h3>
+<hr>
+
+<p> <%= @student.name %> belongs to the house <%= @student_house.name %></p>
+
+<hr>
+
+<%= link_to "Back to the list of all students" , students_path %>
+<%= link_to "Home", root_path %>
+

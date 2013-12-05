@@ -1,0 +1,18 @@
+<h1>Make a new student!</h1>
+<hr>
+<form action="/students" method="post">
+  <label>Student's Name</label>
+  <input type="text" placeholder="name" name="student[name]" autofocus required>
+  <label> Student's Last Name</label>
+  <input type="text" placeholder="last name" name="student[last_name]" required>
+  <label>House</label>
+  <select name="house[name]">
+    <option value="Gryffindor">Gryffindor</option>
+    <option value="Hufflepuff">Hufflepuff</option>
+    <option value="Ravenclaw">Ravenclaw</option>
+    <option value="Slytherin">Slytherin</option>
+  </select>
+  <button type="submit" class="btn btn-primary">Add Student!</button>
+</form>
+<hr>
+<%= link_to "Home", root_path %>
