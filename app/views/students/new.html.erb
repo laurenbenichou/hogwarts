@@ -1,8 +1,8 @@
 <h1>The Hat Test!</h1>
 <hr>
-<div class="alert alert-warning">
-  <%= flash[:message] %>
-</div>
+
+ <h5> <%= flash[:message] %> </h5>
+
 <form action="/students" method="post">
   <label>Student's Name</label>
   <input type="text" placeholder="name" name="student[name]" autofocus required>

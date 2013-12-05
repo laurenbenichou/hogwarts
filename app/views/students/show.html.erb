@@ -1,3 +1,7 @@
+<div class="alert alert-success">
+ <button type="button" class="close" data-dismiss="alert" aria-hidden="true">&times;</button>
+ <%= @student.name %>, The Magic Hat has chosen. You are a <%= @student.house.name %>!
+</div>
 <h3> <span class="glyphicon glyphicon-user"> <%=@student.name%> <%=@student.last_name%>'s profile</span></h3>
 <hr>
 <p> <%= @student.name %> belongs to the house <%= @student_house.name %></p>
