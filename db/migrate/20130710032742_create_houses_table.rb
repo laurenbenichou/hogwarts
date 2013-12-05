@@ -1,11 +1,12 @@
 class CreateHousesTable < ActiveRecord::Migration
-  def up
-    create_table :house do
+  def self.up
+    create_table :houses do |t|
       t.string :name
       t.references :students
     end
   end
 
-  def down
+  def self.down
+    drop_table :houses
   end
 end
